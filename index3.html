@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background: url(wallpaper.jpg);
+
+        }
+
+        .container {
+            color: white;
+            height: 200px;
+            font-size: 25px;
+
+        }
+
+        #contact {
+            position: relative;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+
+
+        }
+
+
+        #contact-box input,
+        #contact-box textarea {
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 80%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+        }
+
+        .btn{
+            background-color: chartreuse;
+            font-size: 20px;
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+           background-color: rgb(90, 117, 83);
+        }
+        .size{
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="head">
+            <center>This is a feedback form
+        </h1>
+        </center>
+        <section id="contact">
+            <div id="contact-box">
+                <form method="post" class="form1" onsubmit="return success()">
+                    <center>
+                        <div class="form-group">
+                            Name :<input type="text" name="myName" id="name">
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            Email : <input type="email" name="myEmail">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            Date :<input type="date" name="myDate">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            Age : <input type="number" name="myBonus">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            Gender: Male <input type="radio" name="myGender"> Female <input type="radio"
+                                name="myGender">
+                            Other <input type="radio" name="myGender">
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            Write your feedback here:<br>
+                            <textarea name="myText" cols="90" rows="10" placeholder="Write here....... "></textarea>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label for="con">Country:</label>
+                            <select name="myCon" id="con" class="size">
+                                <option value="Ind">India</option>
+                                <option value="Swt">America</option>
+                                <option value="Nan">Nepal</option>
+                            </select>
+                        </div>
+
+
+                        <br>
+                        <div>
+                        <input class="btn" type="submit" value="Submit Now">
+                        <input class="btn" type="reset" value="Reset Now">
+                    </div>
+
+                        
+
+                    </center>
+                </form>
+
+            </div>
+        </section>
+    </div>
+</body>
+<script type="text/javascript">
+    function success()
+    {
+        confirm("Thanks for submitting your response");
+    }
+
+</script>
+
+</html>
